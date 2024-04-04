@@ -10,11 +10,13 @@ return {
       require('which-key').register {
         ['<leader>l'] = { name = '[L]SP Get', _ = 'which_key_ignore' },
         ['<leader>ls'] = { name = '[S]ymbols', _ = 'which_key_ignore' },
-        ['<leader>f'] = { name = '[F]ile', _ = 'which_key_ignore' },
+        ['<leader>f'] = { name = '[F]ormat', _ = 'which_key_ignore' },
+        ['<leader>c'] = { name = '[C]omment', _ = 'which_key_ignore' },
         ['<leader>d'] = { name = '[D]ebug / [D]iagnostics', _ = 'which_key_ignore' },
         ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
         ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
         ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
+        ['<leader>h'] = { name = '[H]arpoon', _ = 'which_key_ignore' },
       }
     end,
   },
