@@ -9,6 +9,7 @@ require('lazy').setup({
   require 'kickstart.plugins.mini',
   require 'kickstart.plugins.todo-comments',
   require 'kickstart.plugins.conform',
+  require 'kickstart.plugins.undotree',
   -- visual
   require 'kickstart.plugins.gitsigns',
   require 'kickstart.plugins.tokyonight',
@@ -17,11 +18,13 @@ require('lazy').setup({
   require 'kickstart.plugins.copilot',
   require 'kickstart.plugins.copilot-cmp',
   -- lsp/dap/lint/formatter:
+  require 'kickstart.plugins.snippet',
+  require 'kickstart.plugins.lspconfig',
+  require 'kickstart.plugins.clangd-tools',
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.debug',
-  require 'kickstart.plugins.lspconfig',
-  require 'kickstart.plugins.cmp',
+  require 'kickstart.plugins.trouble',
   require 'kickstart.plugins.harpoon',
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

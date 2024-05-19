@@ -42,6 +42,10 @@ vim.opt.splitbelow = true
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- No weird files
+vim.opt.backup = false
+vim.opt.swapfile = false
+
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
