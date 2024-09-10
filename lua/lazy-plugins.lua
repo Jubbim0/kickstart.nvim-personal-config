@@ -3,6 +3,7 @@ require('lazy').setup({
   require 'kickstart.plugins.tmux-navigator',
   -- Code QOL
   require 'kickstart.plugins.comment',
+  require 'kickstart.plugins.vim-be-good',
   require 'kickstart.plugins.which-key',
   require 'kickstart.plugins.telescope',
   require 'kickstart.plugins.treesitter',
@@ -10,17 +11,18 @@ require('lazy').setup({
   require 'kickstart.plugins.todo-comments',
   require 'kickstart.plugins.conform',
   require 'kickstart.plugins.undotree',
+  require 'kickstart.plugins.nvim-spectre',
+  require 'kickstart.plugins.apm',
   -- visual
   require 'kickstart.plugins.gitsigns',
   require 'kickstart.plugins.tokyonight',
   require 'kickstart.plugins.dressing',
-  -- Copilot
-  require 'kickstart.plugins.copilot',
-  require 'kickstart.plugins.copilot-cmp',
   -- lsp/dap/lint/formatter:
+  require 'kickstart.plugins.copilot',
   require 'kickstart.plugins.snippet',
-  require 'kickstart.plugins.lspconfig',
   require 'kickstart.plugins.clangd-tools',
+  require 'kickstart.plugins.refactoring',
+  require 'kickstart.plugins.lspconfig',
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.debug',

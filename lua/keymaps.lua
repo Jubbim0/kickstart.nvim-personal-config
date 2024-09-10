@@ -5,6 +5,7 @@
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+vim.api.nvim_set_keymap('n', '<leader>R', ':LspRestart<CR>', { noremap = true, silent = true })
 -- Move text in V mode
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
@@ -80,3 +81,16 @@ vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 vim.keymap.set('i', '<C-c>', '<Esc>')
 -- Tmux Sessionizer
 vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
+
+-- Refactor
+vim.keymap.set('x', '<leader>re', ':Refactor extract ', { desc = '[R]efactor [E]xtract' })
+vim.keymap.set('x', '<leader>rf', ':Refactor extract_to_file ', { desc = '[R]efactor Extract To [F]ile' })
+
+vim.keymap.set('x', '<leader>rv', ':Refactor extract_var ', { desc = '[R]efactor [V]ariable Extract' })
+
+vim.keymap.set({ 'n', 'x' }, '<leader>riv', ':Refactor inline_var', { desc = '[R]efactor [I]nline-[V]ariable' })
+
+vim.keymap.set('n', '<leader>rif', ':Refactor inline_func', { desc = '[R]efactor [I]nline-[F]unc' })
+
+vim.keymap.set('n', '<leader>rb', ':Refactor extract_block', { desc = '[R]efactor [B]lock' })
+vim.keymap.set('n', '<leader>rbf', ':Refactor extract_block_to_file', { desc = '[R]efactor [B]lock to file' })

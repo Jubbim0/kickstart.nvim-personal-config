@@ -6,9 +6,9 @@ return {
         icons = false,
       }
 
-      vim.keymap.set('n', '<leader>tt', function()
+      vim.keymap.set('n', '<leader>t', function()
         require('trouble').toggle()
-      end)
+      end, { desc = '[T]rouble' })
 
       vim.keymap.set('n', '[t', function()
         require('trouble').next { skip_groups = true, jump = true }

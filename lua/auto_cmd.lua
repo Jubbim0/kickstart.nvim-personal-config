@@ -34,6 +34,8 @@ autocmd({ 'BufWritePre' }, {
 autocmd('LspAttach', {
   group = MyGroup,
   callback = function(e)
+    require('clangd_extensions.inlay_hints').setup_autocmd()
+    require('clangd_extensions.inlay_hints').set_inlay_hints()
     vim.keymap.set('n', '<leader>ld', function()
       vim.lsp.buf.definition()
     end, { desc = '[L]SP [D]efinition', buffer = e.buf })
