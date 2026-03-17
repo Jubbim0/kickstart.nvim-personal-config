@@ -9,16 +9,14 @@ require('lazy').setup({
   require 'kickstart.plugins.treesitter',
   require 'kickstart.plugins.mini',
   require 'kickstart.plugins.todo-comments',
-  require 'kickstart.plugins.conform',
   require 'kickstart.plugins.undotree',
   require 'kickstart.plugins.nvim-spectre',
-  require 'kickstart.plugins.apm',
+  require 'kickstart.plugins.edstem-guard',
   -- visual
   require 'kickstart.plugins.gitsigns',
   require 'kickstart.plugins.tokyonight',
   require 'kickstart.plugins.dressing',
   -- lsp/dap/lint/formatter:
-  require 'kickstart.plugins.copilot',
   require 'kickstart.plugins.snippet',
   require 'kickstart.plugins.clangd-tools',
   require 'kickstart.plugins.refactoring',
