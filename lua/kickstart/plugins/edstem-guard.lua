@@ -1,6 +1,6 @@
 return {
   {
-    "YOUR_GITHUB_USERNAME/nvim-edstem-guard",
+    "Jubbim0/nvim-edstem-guard",
     main = "edstem_guard",
     opts = {
       line_threshold = 20,
